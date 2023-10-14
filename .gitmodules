@@ -1,3 +1,6 @@
 [submodule "Generate_profile_app"]
 	path = Generate_profile_app
 	url = https://github.com/TomokiMatsubuchi/generate_profile_app
+[submodule "Generate_profile_backend"]
+	path = Generate_profile_backend
+	url = https://github.com/TomokiMatsubuchi/generate_profile_backend
