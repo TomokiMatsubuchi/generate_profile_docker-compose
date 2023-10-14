@@ -1,0 +1,3 @@
+[submodule "Generate_profile_app"]
+	path = Generate_profile_app
+	url = https://github.com/TomokiMatsubuchi/generate_profile_app
