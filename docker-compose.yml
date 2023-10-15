@@ -35,12 +35,16 @@ services:
       context: ./Generate_profile_app/
     volumes:
       - ./Generate_profile_app:/front
+      - node_modules:/front/node_modules
     ports:
       - 8080:8080
     depends_on:
       - api
+    environment:
+      - WATCHPACK_POLLING=true
     command: 'yarn dev'
 
 volumes:
   bundle_data:
   postgres:
+  node_modules:
