@@ -28,6 +28,19 @@ services:
     environment:
       API_DATABASE_PASSWORD: ${DB_PASSWORD}
 
+  front:
+    container_name: front
+    hostname: front
+    build:
+      context: ./Generate_profile_app/
+    volumes:
+      - ./Generate_profile_app:/front
+    ports:
+      - 8080:8080
+    depends_on:
+      - api
+    command: 'yarn dev'
+
 volumes:
   bundle_data:
   postgres:
